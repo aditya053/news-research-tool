@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+
+venv/
+.venv/
+
+.env
+
+.vscode/
+
+.ipynb_checkpoints/
+
+faiss_store_hfai.pkl
