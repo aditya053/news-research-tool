@@ -14,6 +14,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+
 llm_endpoint = HuggingFaceEndpoint(
     repo_id="meta-llama/Meta-Llama-3-8B-Instruct",
     task="text-generation",
@@ -79,4 +80,4 @@ if query:
         )
         result = chain.invoke(query)
         st.header("Answer")
-        st.write(result)
+   
